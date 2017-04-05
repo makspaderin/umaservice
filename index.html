@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Uma Service</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+
+  <body ng-app="uma" ng-controller="umaController">
+    <nav class="navbar" id="topbar">
+      <div class="container-fluid">
+        <div class="navbar-brand"
+          <a href="index.html">
+            <img src="img/logo.jpg" id="logoimg">
+          </img></a>
+        </div>
+        <ul class="nav navbar-nav navbar-right" id="toplist">
+          <li><a class="page-scroll" href="#servicessection">About Us</a></li>
+          <li><a class="page-scroll" href="#servicessection">Work</a></li>
+          <li><a class="page-scroll" href="#servicessection">Contacts</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="listings">
+      <div class="container">
+        <div class="col-md-4" ng-repeat="item in items">
+          <div class="thumbnail">
+            <a href="/{{item.link}}.html">
+            <img ng-src="images/{{item.image}}.jpg" alt="{{item.altimage}}">
+            <div class="caption">
+              <h4>{{ item.name }}</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+    <script src="app.js"></script>
+    <script src="scripts/umaController.js"></script>
+    <script src="scripts/umaFactory.js"></script>
+  </html>

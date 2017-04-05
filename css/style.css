@@ -1,0 +1,53 @@
+/* Navbar */
+
+#logoimg {
+  float: left;
+	width: 120px;
+	height: 40px;
+	z-index: 11;
+}
+
+#topbar {
+  border-width: 5px;
+  height: 10vh;
+  position: relative;
+}
+
+#toplist {
+  margin-right: 1%;
+}
+
+#toplist li {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: 'Nevis';
+  color: black;
+  letter-spacing: 1.5px;
+}
+
+/* Listings section */
+
+#listings {
+  position: relative;
+  width: 100vw;
+  height: 800px;
+}
+
+/* General */
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+/* Fonts */
+
+ @font-face {
+  font-family: 'Nevis';
+  src: url('../fonts/nevis.ttf') format("truetype");
+}
